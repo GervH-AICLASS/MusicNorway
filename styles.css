@@ -5,11 +5,16 @@ body {
     margin: 0;
     padding: 0;
     background-color: #F0E6D2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .container {
     max-width: 1000px;
-    margin: 0 auto;
+    width: 90%;
+    margin: 20px;
     padding: 20px;
     background-color: #FFFFFF;
     border-radius: 5px;
@@ -22,16 +27,27 @@ h1 {
     text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 
+.subtitle {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
 .analysis-link {
-    display: block;
+    display: inline-block;
     background-color: #2C5E1A;
     color: #FFD700;
     text-align: center;
-    padding: 10px;
+    padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 20px;
     font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 .analysis-link:hover {
