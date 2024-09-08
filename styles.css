@@ -49,6 +49,10 @@ h1 {
     margin-bottom: 20px;
 }
 
+.audio-player audio {
+    width: 100%;
+}
+
 .image-container {
     width: 48%;
     margin-right: 2%;
