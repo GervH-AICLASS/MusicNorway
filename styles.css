@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #b22222;
+    background-color: #e63946;
     color: #fff;
     padding: 1rem;
 }
@@ -26,18 +26,19 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: bold;
 }
 
 main {
     padding: 2rem;
-    background-color: #000080;
+    background-color: #1d3557;
     color: #fff;
 }
 
 h1 {
     color: #ffd700;
+    font-size: 2.5rem;
 }
 
 #norwegian-history ul {
@@ -46,18 +47,18 @@ h1 {
 }
 
 #norwegian-history ul li {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 #norwegian-history ul li a {
-    color: #ffd700;
+    color: #a8dadc;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: bold;
 }
 
 footer {
-    background-color: #b22222;
+    background-color: #e63946;
     color: #fff;
     text-align: center;
     padding: 1rem;
