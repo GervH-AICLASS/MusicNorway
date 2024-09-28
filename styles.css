@@ -1,10 +1,10 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #EEF1F0;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #1A2E40;
 }
 
 .container {
@@ -15,12 +15,12 @@ body {
 }
 
 h1 {
-    color: #2c3e50;
+    color: #8BCFDF;
     text-align: center;
 }
 
 h2 {
-    color: #34495e;
+    color: #8BCFDF;
 }
 
 .audio-player {
@@ -51,14 +51,14 @@ h2 {
 
 .lyrics-container {
     width: 48%;
-    background-color: #fff;
+    background-color: #2C4356;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .song-analysis {
-    background-color: #fff;
+    background-color: #2C4356;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -71,8 +71,8 @@ h2 {
 
 .analysis-link {
     display: inline-block;
-    background-color: #3498db;
-    color: #fff;
+    background-color: #8BCFDF;
+    color: #1A2E40;
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
@@ -80,7 +80,7 @@ h2 {
 }
 
 .analysis-link:hover {
-    background-color: #2980b9;
+    background-color: #6BAFBF;
 }
 
 @media (max-width: 768px) {
