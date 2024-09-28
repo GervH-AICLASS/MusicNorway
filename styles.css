@@ -1,10 +1,19 @@
+:root {
+    --deep-forest-green: #1a3c1e;
+    --gold: #ffd700;
+    --light-red: #ff9999;
+    --sage-green: #7ea16b;
+    --cream: #f9f3e6;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Georgia', serif;
     line-height: 1.6;
-    color: #EEF1F0;
+    color: var(--cream);
     margin: 0;
     padding: 0;
-    background-color: #1A2E40;
+    background-color: var(--deep-forest-green);
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="20" height="20"><circle cx="50" cy="50" r="1" fill="%23ffd700" opacity="0.1"/></svg>');
 }
 
 .container {
@@ -15,12 +24,16 @@ body {
 }
 
 h1 {
-    color: #8BCFDF;
+    color: var(--gold);
     text-align: center;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 h2 {
-    color: #8BCFDF;
+    color: var(--light-red);
+    border-bottom: 2px solid var(--gold);
+    padding-bottom: 5px;
 }
 
 .audio-player {
@@ -30,6 +43,7 @@ h2 {
 
 .audio-player audio {
     width: 100%;
+    background-color: var(--sage-green);
 }
 
 .content-wrapper {
@@ -46,23 +60,26 @@ h2 {
     width: 100%;
     height: auto;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    border: 3px solid var(--gold);
 }
 
 .lyrics-container {
     width: 48%;
-    background-color: #2C4356;
+    background-color: rgba(126, 161, 107, 0.2);
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    border: 1px solid var(--gold);
 }
 
 .song-analysis {
-    background-color: #2C4356;
+    background-color: rgba(126, 161, 107, 0.2);
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     margin-bottom: 20px;
+    border: 1px solid var(--gold);
 }
 
 .song-analysis ul {
@@ -71,16 +88,19 @@ h2 {
 
 .analysis-link {
     display: inline-block;
-    background-color: #8BCFDF;
-    color: #1A2E40;
+    background-color: var(--gold);
+    color: var(--deep-forest-green);
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    font-weight: bold;
 }
 
 .analysis-link:hover {
-    background-color: #6BAFBF;
+    background-color: var(--light-red);
+    color: var(--cream);
+    transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
