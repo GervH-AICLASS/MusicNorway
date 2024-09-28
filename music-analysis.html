@@ -15,6 +15,7 @@
                 <source src="The Whispering Pines Festival.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
+            <div id="audio-error" style="color: red;"></div>
         </div>
 
         <div class="content-wrapper">
@@ -92,6 +93,36 @@ A harmony of souls that will echo forever
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var audio = document.getElementById('audio');
+            var errorDiv = document.getElementById('audio-error');
+
+            audio.addEventListener('error', function(e) {
+                console.error('Error loading audio:', e);
+                switch (audio.error.code) {
+                    case 1:
+                        errorDiv.textContent = "Loading aborted: Please try reloading the page.";
+                        break;
+                    case 2:
+                        errorDiv.textContent = "Network error: Please check your internet connection.";
+                        break;
+                    case 3:
+                        errorDiv.textContent = "Audio decoding failed: The audio file might be corrupted.";
+                        break;
+                    case 4:
+                        errorDiv.textContent = "Audio file not found: Please check if the file 'The Whispering Pines Festival.mp3' exists in the correct location.";
+                        break;
+                    default:
+                        errorDiv.textContent = "An unknown error occurred while loading the audio.";
+                }
+            });
+
+            audio.addEventListener('loadeddata', function() {
+                console.log('Audio loaded successfully');
+                errorDiv.textContent = '';
+            });
+        });
+    </script>
 </body>
 </html>
