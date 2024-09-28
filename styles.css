@@ -1,142 +1,72 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    background-color: #000080; /* Navy Blue */
-}
-
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.2);
-    border: 3px solid #FFD700; /* Gold */
 }
 
 header {
-    background-color: #B22222; /* Red */
-    color: #FFD700; /* Gold */
-    text-align: center;
-    padding: 1rem 0;
-    border-radius: 7px 7px 0 0;
+    background-color: #b22222;
+    color: #fff;
+    padding: 1rem;
 }
 
-h1, h2 {
-    color: #B22222; /* Red */
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.hero {
-    position: relative;
-    text-align: center;
-    color: white;
-    margin-bottom: 2rem;
+nav ul li {
+    display: inline;
+    margin-right: 10px;
 }
 
-.hero-image {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.info, .cta, .analysis {
-    background-color: #f8f8f8;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    border-radius: 10px;
-    border: 2px solid #FFD700; /* Gold */
-}
-
-.button {
-    display: inline-block;
-    background-color: #B22222; /* Red */
-    color: #FFD700; /* Gold */
-    padding: 10px 20px;
+nav ul li a {
+    color: #fff;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    border: 2px solid #FFD700; /* Gold */
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
-.button:hover {
-    background-color: #FFD700; /* Gold */
-    color: #B22222; /* Red */
+main {
+    padding: 2rem;
+    background-color: #000080;
+    color: #fff;
 }
 
-.audio-player {
-    text-align: center;
-    margin-bottom: 2rem;
+h1 {
+    color: #ffd700;
 }
 
-.audio-player audio {
-    width: 100%;
-    max-width: 500px;
+#norwegian-history ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.content-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 2rem;
+#norwegian-history ul li {
+    margin-bottom: 10px;
 }
 
-.image-container, .lyrics {
-    flex-basis: 48%;
-}
-
-.festival-image {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-pre {
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    background-color: #f8f8f8;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 15px;
-    font-size: 14px;
-    line-height: 1.4;
-}
-
-.button-container {
-    text-align: center;
-    margin-top: 2rem;
+#norwegian-history ul li a {
+    color: #ffd700;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
 footer {
-    background-color: #B22222; /* Red */
-    color: #FFD700; /* Gold */
+    background-color: #b22222;
+    color: #fff;
     text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
-    border-radius: 0 0 7px 7px;
-    border-top: 2px solid #FFD700; /* Gold */
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-@media (max-width: 768px) {
-    .content-wrapper {
-        flex-direction: column;
-    }
-
-    .image-container, .lyrics {
-        flex-basis: 100%;
-        margin-bottom: 1rem;
-    }
+/* Hover effects */
+nav ul li a:hover, #norwegian-history ul li a:hover {
+    text-decoration: underline;
 }
