@@ -1,81 +1,78 @@
-:root {
-    --primary-color: #2c3e50;
-    --secondary-color: #34495e;
-    --accent-color: #e74c3c;
-    --text-color: #ecf0f1;
-    --gold: #ffd700;
-}
-
 body {
     font-family: Arial, sans-serif;
-    background-color: var(--primary-color);
-    color: var(--text-color);
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
 }
 
 .container {
-    max-width: 1000px;
-    margin: 0 auto;
+    background-color: #fff;
     padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
+    color: #2c3e50;
     text-align: center;
-    color: var(--gold);
+}
+
+h2 {
+    color: #34495e;
 }
 
 .audio-player {
     margin-bottom: 20px;
+    text-align: center;
 }
 
-audio {
+.audio-player audio {
     width: 100%;
+    max-width: 500px;
 }
 
 .content-wrapper {
     display: flex;
-    gap: 20px;
+    flex-direction: row;
+    justify-content: space-between;
     margin-bottom: 20px;
 }
 
 .image-container {
     flex: 1;
+    margin-right: 20px;
 }
 
 .festival-image {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    display: block;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
 .lyrics {
     flex: 1;
-    background-color: var(--secondary-color);
-    padding: 20px;
-    border-radius: 5px;
-    overflow-y: auto;
-    max-height: 400px;
-}
-
-.analysis {
-    background-color: var(--secondary-color);
-    padding: 20px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
-
-h2 {
-    color: var(--gold);
 }
 
 pre {
     white-space: pre-wrap;
     word-wrap: break-word;
-    font-family: inherit;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.analysis {
+    margin-top: 20px;
+}
+
+.analysis ul {
+    padding-left: 20px;
 }
 
 .button-container {
@@ -83,22 +80,27 @@ pre {
     margin-top: 20px;
 }
 
-.analysis-button, .back-button {
+.back-button {
     display: inline-block;
-    background-color: var(--accent-color);
-    color: var(--text-color);
+    background-color: #3498db;
+    color: #fff;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
-.analysis-button:hover, .back-button:hover {
-    background-color: var(--secondary-color);
+.back-button:hover {
+    background-color: #2980b9;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .content-wrapper {
         flex-direction: column;
+    }
+
+    .image-container, .lyrics {
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 }
