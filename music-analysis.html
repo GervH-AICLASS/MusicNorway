@@ -8,24 +8,26 @@
 </head>
 <body>
     <div class="container">
-        <h1>The Whispering Pines Festival</h1>
-        
-        <div class="audio-player">
-            <audio id="audio" controls>
-                <source src="The Whispering Pines Festival.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-            <div id="audio-error" style="color: red;"></div>
-        </div>
+        <header>
+            <h1>The Whispering Pines Festival</h1>
+        </header>
+        <main>
+            <section class="audio-player">
+                <h2>Theme Song</h2>
+                <audio controls>
+                    <source src="The Whispering Pines Festival.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </section>
 
-        <div class="content-wrapper">
-            <div class="image-container">
-                <img src="Leonardo_Phoenix_A_magical_forest_clearing_at_twilight_filled_3.jpg" alt="The Whispering Pines Festival" class="festival-image">
-            </div>
+            <section class="content-wrapper">
+                <div class="image-container">
+                    <img src="Leonardo_Phoenix_A_magical_forest_clearing_at_twilight_filled_3.jpg" alt="The Whispering Pines Festival" class="festival-image">
+                </div>
 
-            <div class="lyrics">
-                <h2>Lyrics</h2>
-                <pre>
+                <div class="lyrics">
+                    <h2>Lyrics</h2>
+                    <pre>
 The Whispering Pines Festival
 
 Verse 1:
@@ -61,68 +63,40 @@ As morning light breaks, and the last notes fade away
 We carry the magic of this special day
 The Whispering Pines Festival, a memory to treasure
 A harmony of souls that will echo forever
-                </pre>
+                    </pre>
+                </div>
+            </section>
+
+            <section class="analysis">
+                <h2>Music Analysis</h2>
+                <p>
+                    "The Whispering Pines Festival" is a folk-inspired song that captures the essence of a magical music festival set in a pine forest. Here's a brief analysis of its musical elements:
+                </p>
+                <ul>
+                    <li><strong>Genre:</strong> Folk/Acoustic</li>
+                    <li><strong>Structure:</strong> Verse-Chorus form with a Bridge</li>
+                    <li><strong>Instrumentation:</strong> Likely features acoustic guitars, drums, and possibly woodwind instruments to evoke a forest atmosphere</li>
+                    <li><strong>Mood:</strong> Whimsical, nostalgic, and enchanting</li>
+                    <li><strong>Lyrical Themes:</strong> Nature, music, community, and the transformative power of shared experiences</li>
+                    <li><strong>Imagery:</strong> Rich descriptions of the forest setting, emphasizing the interplay between nature and music</li>
+                    <li><strong>Harmony:</strong> Likely uses simple, folk-inspired chord progressions to create a warm, inviting sound</li>
+                    <li><strong>Rhythm:</strong> Probably features a steady, danceable beat that mimics the rhythm of nature</li>
+                </ul>
+                <p>
+                    The song's structure and lyrics work together to create a narrative arc that takes the listener through the experience of the festival, from twilight to dawn. The repetition of the chorus reinforces the central themes and creates a sense of unity and shared experience.
+                </p>
+                <p>
+                    Overall, "The Whispering Pines Festival" seems designed to evoke a sense of wonder and connection, both to nature and to fellow music lovers, capturing the transformative power of music in a natural setting.
+                </p>
+            </section>
+
+            <div class="button-container">
+                <a href="index.html" class="button">Back to Home</a>
             </div>
-        </div>
-
-        <div class="analysis">
-            <h2>Music Analysis</h2>
-            <p>
-                "The Whispering Pines Festival" is a folk-inspired song that captures the essence of a magical music festival set in a pine forest. Here's a brief analysis of its musical elements:
-            </p>
-            <ul>
-                <li><strong>Genre:</strong> Folk/Acoustic</li>
-                <li><strong>Structure:</strong> Verse-Chorus form with a Bridge</li>
-                <li><strong>Instrumentation:</strong> Likely features acoustic guitars, drums, and possibly woodwind instruments to evoke a forest atmosphere</li>
-                <li><strong>Mood:</strong> Whimsical, nostalgic, and enchanting</li>
-                <li><strong>Lyrical Themes:</strong> Nature, music, community, and the transformative power of shared experiences</li>
-                <li><strong>Imagery:</strong> Rich descriptions of the forest setting, emphasizing the interplay between nature and music</li>
-                <li><strong>Harmony:</strong> Likely uses simple, folk-inspired chord progressions to create a warm, inviting sound</li>
-                <li><strong>Rhythm:</strong> Probably features a steady, danceable beat that mimics the rhythm of nature</li>
-            </ul>
-            <p>
-                The song's structure and lyrics work together to create a narrative arc that takes the listener through the experience of the festival, from twilight to dawn. The repetition of the chorus reinforces the central themes and creates a sense of unity and shared experience.
-            </p>
-            <p>
-                Overall, "The Whispering Pines Festival" seems designed to evoke a sense of wonder and connection, both to nature and to fellow music lovers, capturing the transformative power of music in a natural setting.
-            </p>
-        </div>
-
-        <div class="button-container">
-            <a href="index.html" class="back-button">Back to Home</a>
-        </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 The Whispering Pines Festival. All rights reserved.</p>
+        </footer>
     </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var audio = document.getElementById('audio');
-            var errorDiv = document.getElementById('audio-error');
-
-            audio.addEventListener('error', function(e) {
-                console.error('Error loading audio:', e);
-                switch (audio.error.code) {
-                    case 1:
-                        errorDiv.textContent = "Loading aborted: Please try reloading the page.";
-                        break;
-                    case 2:
-                        errorDiv.textContent = "Network error: Please check your internet connection.";
-                        break;
-                    case 3:
-                        errorDiv.textContent = "Audio decoding failed: The audio file might be corrupted.";
-                        break;
-                    case 4:
-                        errorDiv.textContent = "Audio file not found: Please check if the file 'The Whispering Pines Festival.mp3' exists in the correct location.";
-                        break;
-                    default:
-                        errorDiv.textContent = "An unknown error occurred while loading the audio.";
-                }
-            });
-
-            audio.addEventListener('loadeddata', function() {
-                console.log('Audio loaded successfully');
-                errorDiv.textContent = '';
-            });
-        });
-    </script>
 </body>
 </html>
