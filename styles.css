@@ -86,7 +86,7 @@ h2 {
     padding-left: 20px;
 }
 
-.analysis-link {
+.analysis-link, .song-link {
     display: inline-block;
     background-color: var(--gold);
     color: var(--deep-forest-green);
@@ -95,12 +95,19 @@ h2 {
     border-radius: 5px;
     transition: all 0.3s ease;
     font-weight: bold;
+    margin: 10px 0;
 }
 
-.analysis-link:hover {
+.analysis-link:hover, .song-link:hover {
     background-color: var(--light-red);
     color: var(--cream);
     transform: scale(1.05);
+}
+
+.song-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media (max-width: 768px) {
